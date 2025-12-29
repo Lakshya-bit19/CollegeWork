@@ -1,0 +1,332 @@
+5} git config --global user.name "Lakshay"
+​
+git config --global user.email "Lakshay123@gmail.com"
+​
+cd desktop
+​
+mkdir gitlab5
+​
+cd gitlab5
+​
+git clone https://github.com/shushank988/college-git.git
+​
+cd college-git
+​
+git add .
+​
+git commit -m "add version1"
+​
+git fetch origin
+​
+git rebase origin
+​
+git add .
+​
+git rebase --continue
+​
+cat git05
+​
+git push origin main
+
+
+
+6} git config --global user.name "shushank"
+​
+git config --global user.email "shushank123@gmail.com"
+​
+cd desktop
+​
+mkdir gitlab6
+​
+cd gitlab6
+​
+git clone https://github.com/Shushank988/college-git.git
+​
+cd college-git
+​
+git checkout -b feature-branch
+​
+git add .
+​
+git commit -m "add feature branch change"
+​
+git push -u origin feature-branch
+​
+git checkout main
+​
+git pull origin main
+​
+git merge feature-branch -m "Merges feature-branch into main"
+​
+cat git06
+​
+git push -u origin main
+​
+
+7}git config --global user.name "shushank"
+​
+git config --global user.email "shushank123@gmail.com"
+​
+pwd
+​
+cd Desktop
+​
+mkdir gitlab07
+​
+cd gitlab07
+​
+touch exp7.txt
+​
+git init
+​
+git add .
+​
+git commit -m "first commit"
+​
+git tag v1.0
+​
+git tag
+​
+echo "second message" >> exp7.txt
+​
+git add .
+​
+git commit -m "second commit"
+​
+echo "third message" >> exp7.txt
+​
+git add .
+​
+git commit -m "third commit"
+​
+echo "fourth message" >> exp7.txt
+​
+git add .
+​
+git commit -m "fourth commit"
+​
+git tag v2.0
+​
+git tag
+​
+git log --oneline
+​
+git show v1.0
+​
+git remote add origin https://github.com/Shahaji36/gitlab7.git
+​
+git branch -M main
+​
+git push -u origin main
+​
+git push --tags
+​
+
+8}git config --global user.name "shushank"
+​
+git config --global user.email "shushank123@gmail.com"
+​
+pwd
+​
+cd desktop
+​
+mkdir cherrypick
+​
+cd cherrypick
+​
+touch cp.txt
+​
+git init
+​
+echo "cherry-pick" >> cp.txt
+​
+git add .
+​
+git commit -m "initial commit on main"
+​
+git checkout -b source-branch
+​
+echo "SB cherry-pick 1" >> cp.txt
+​
+git add .
+​
+git commit -m "adding SB cherry-pick1 txt"
+​
+echo "SB cherry-pick 2" >> cp.txt
+​
+git add .
+​
+git commit -m "adding SB cherry-pick2 txt"
+​
+echo "SB cherry-pick 3" >> cp.txt
+​
+git add .
+​
+git commit -m "adding SB cherry-pick3 txt"
+​
+git log --oneline source-branch
+​
+git checkout master
+​
+git cherry-pick c48ecf9^..db0b129
+​
+cat cp.txt
+​
+
+9}git config --global user.name "shushank"
+​
+git config --global user.email "shushank123@gmail.com"
+​
+pwd
+​
+cd desktop
+​
+mkdir gitlab9
+​
+cd gitlab9
+​
+touch exp9.txt
+​
+git init
+​
+echo "message1" >> exp9.txt
+​
+git add .
+​
+git commit -m "commit-1"
+​
+echo "message2" >> exp9.txt
+​
+git add .
+​
+git commit -m "commit-2"
+​
+echo "message3" >> exp9.txt
+​
+git add .
+​
+git commit -m "commit-3"
+​
+git log --oneline
+​
+git show 1767ed9
+​
+git config --global --unset-all user.name "shushank"
+​
+git config --global --unset-all user.email "shushank123@gmail.com"
+​
+
+10}
+git config --global user.name "shushank"
+​
+git config --global user.email "shushank123@gmail.com"
+​
+cd desktop
+​
+mkdir gitlab10
+​
+cd gitlab10
+​
+touch file10.txt
+​
+git init
+​
+echo "first message" > file10.txt
+​
+git add .
+​
+git commit -m "First commit"
+​
+git commit --allow-empty --author="John Doe john@example.com" -m "commit 1 by John Doe"
+​
+git commit --allow-empty --author="John Doe john@example.com" -m "commit 2 by John Doe"
+​
+git commit --allow-empty --author="Alice alice@example.com" -m "Commit by Alice"
+​
+git log --oneline --pretty=format:"%h %an %ad %s"
+​
+git log --author="John Doe" --since="2025-01-01" --until="2025-12-31"
+​
+
+11} git config --global user.name "shushank"
+​
+git config --global user.email "shushank123@gmail.com"
+​
+pwd
+​
+cd desktop
+​
+mkdir gitlab11
+​
+cd gitlab11
+​
+touch file11.txt
+​
+git init
+​
+echo "message1" >> file11.txt
+​
+git add .
+​
+git commit -m "commit-1"
+​
+echo "message2" >> file11.txt
+​
+git add .
+​
+git commit -m "commit-2"
+​
+echo "message3" >> file11.txt
+​
+git add .
+​
+git commit -m "commit-3"
+​
+echo "message4" >> file11.txt
+​
+git add .
+​
+git commit -m "commit-4"
+​
+git log -n 4
+​
+
+12} git config --global user.name "shushank"
+​
+git config --global user.email "shushank123@gmail.com"
+​
+pwd
+​
+cd Desktop
+​
+mkdir gitlab12
+​
+cd gitlab12
+​
+touch file.txt
+​
+git init
+​
+echo "first message" >> file.txt
+​
+git add .
+​
+git commit -m "first commit"
+​
+echo "second message" >> file.txt
+​
+git add .
+​
+git commit -m "second commit"
+​
+git log --oneline
+​
+git revert 45f3537
+​
+cat file.txt
+​
+git config --global --unset-all user.name "shushank"
+​
+git config --global --unset-all user.email "shushank123@gmail.com"
+​​
+
